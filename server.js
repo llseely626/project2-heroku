@@ -22,7 +22,14 @@ mongoose.connect(MONGODB_URI, {
     console.log('connected to mongo database')
 });
 
-//Routes
+//Controllers
+// require our toys_Controller
+const toysController = require('./Controllers/toys_Controllers')
+
+
+// Middleware
+// app.use our required toys controller for routes starting with '/toys'
+app.use('/toys', toysController)
 
 //localhost:3000
 app.get('/', (req, res) => {
