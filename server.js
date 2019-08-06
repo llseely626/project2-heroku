@@ -32,9 +32,9 @@ const toysController = require('./Controllers/toys_Controllers')
 app.use('/toys', toysController)
 
 //localhost:3000
-app.get('/', (req, res) => {
-    res.send('app is running!')
-})
+// app.get('/', (req, res) => {
+//     res.send('app is running!')
+// })
 
 
 //Listener
