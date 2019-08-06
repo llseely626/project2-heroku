@@ -10,12 +10,15 @@
 
 <body>
     <h1>Pet Toy Swap</h1>
-    <!-- <a href=''>Add a new toy to swap!</a> -->
+    <a href="/toys/new"><button>add new toy to swap!</button></a>
     <ul>
         <% for(let i = 0; i < allToy.length; i++){ %>
         <div>
-            <a href="/toys/<%= allToy[i].id %>"><%=allToy[i].name%></a>
-            <img src="<%= allToy[i].img %>">
+            <a href="/toys/<%= allToy[i].id %>">
+                <h4><%=allToy[i].name%></h4>
+            </a>
+            <img src="<%= allToy[i].img %>"></a>
+
         </div>
         <% } %>
     </ul>

@@ -29,7 +29,14 @@ const toysController = require('./Controllers/toys_Controllers')
 
 // Middleware
 // app.use our required toys controller for routes starting with '/toys'
+app.use(express.urlencoded({
+    extended: false
+}))
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 app.use('/toys', toysController)
+
+
 
 //localhost:3000
 // app.get('/', (req, res) => {

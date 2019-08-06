@@ -50,7 +50,7 @@ toys.get('/seed', async (req, res) => {
 });
 
 
-//toys index
+//index route
 toys.get('/', (req, res) => {
     Toy.find({}, (err, allToy) => {
         res.render('index.ejs', {
@@ -74,13 +74,48 @@ toys.get('/:id', (req, res) => {
     })
 })
 
+//edit route
+toys.get('/:id/edit', (req, res) => {
+    Toy.findById(req.params.id, (err, foundToy) => {
+        res.render('edit.ejs', {
+            toyID: foundToy
+        })
+    })
+})
+
+//create route
 toys.post('/', (req, res) => {
     console.log('help')
+    console.log(req.body)
     Toy.create(req.body, (err) => {
         if (err) {
             console.log(err)
         } else {
-            res.redirect('/toys/')
+            res.redirect('/toys')
+        }
+    })
+})
+
+//Update route
+toys.put('/:id', (req, res) => {
+    Toy.findByIdAndUpdate(req.params.id, req.body, {
+        new: true
+    }, (err, updatedToy) => {
+        if (err) {
+            console.log(err)
+        }
+        res.redirect(`/toys/${req.params.id}`)
+    })
+})
+
+//Delete route
+toys.delete('/:id', (req, res) => {
+    Toy.findByIdAndRemove(req.params.id, (err, deletedToy) => {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log('removed', deletedToy)
+            res.redirect('/toys')
         }
     })
 })
