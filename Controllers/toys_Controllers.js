@@ -2,7 +2,7 @@
 const express = require('express')
 const toys = express.Router()
 
-const Toy = require('../Models/toys')
+const Toy = require('../models/toys')
 
 
 

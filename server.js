@@ -24,7 +24,7 @@ mongoose.connect(MONGODB_URI, {
 
 //Controllers
 // require our toys_Controller
-const toysController = require('./Controllers/toys_Controllers')
+const toysController = require('./controllers/toys_Controllers')
 
 
 // Middleware
