@@ -22,6 +22,7 @@
     <h3><%= toyID.contact %></h3>
     <h2><a href="/toys">Back to Toy Index</a></h2>
     <a href="/toys/<%= toyID.id %>/edit"><button>Edit toy</button></a>
+    <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
 
     <form action="/toys/<%= toyID.id %>?_method=DELETE" method="POST">
         <input type="submit" value="Delete" />
