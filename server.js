@@ -34,6 +34,7 @@ app.use(express.urlencoded({
 }))
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
+app.use(express.static('public'))
 app.use('/toys', toysController)
 
 
