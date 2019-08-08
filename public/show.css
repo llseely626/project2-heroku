@@ -1,17 +1,13 @@
 h1 {
     text-align: center;
     font-family: 'Source Serif Pro', serif;
-    text-decoration: underline;
-
-
 }
 
-h2 {
+h3 {
     font-family: 'Source Serif Pro', serif;
-
 }
 
-h4 {
+a {
     font-family: 'Source Serif Pro', serif;
 }
 
@@ -20,18 +16,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: skyblue;
 
 }
 
 
 img {
     width: 200px;
-    margin: 16.5px 105.7px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
+    margin: auto;
 }
 
 .index-container {
@@ -41,7 +33,7 @@ img {
     width: 100%;
 }
 
-/* tried to use flex-box to make rows */
+
 .index {
     display: inline-flex;
     flex-direction: column;
@@ -51,8 +43,6 @@ img {
     text-align: center;
     margin: 0 auto;
 }
-
-
 
 .buttons {
     display: inline-flex;
@@ -64,15 +54,4 @@ img {
 
 form {
     margin: 10px 0 0 30px;
-}
-
-
-
-.card-panel.blue.lighten-2 {
-    margin: 0px;
-    padding: 26px;
-}
-
-.laura {
-    margin: 0px;
 }

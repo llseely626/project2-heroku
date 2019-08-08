@@ -7,7 +7,8 @@
     <!--Import materialize.css-->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/new.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +18,9 @@
 </head>
 
 <body>
-    <h1>Create New Toy</h1>
+    <h1>Create a New Toy</h1>
+    <h2>Please add only gently used or brand new toys</h2>
+    <div class="input-field col s6 laura">
     <form action="/toys/" method="POST">
         <label for="name">name</label>
         <input type="text" name="name" id="name" />
@@ -32,6 +35,9 @@
 
 
     </form>
+    <h2><a href="/toys">Back to Index</a></h2>
+   </div>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
