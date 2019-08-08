@@ -1,3 +1,30 @@
-h1 {
+/* h1 {
     color: green;
+} */
+
+img {
+    width: 200px;
+    margin: auto;
 }
+
+.index-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* tried to use flex-box to make rows */
+.index {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33.1%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* body {
+    background-color: blue;
+} */

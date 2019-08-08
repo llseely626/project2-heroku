@@ -6,7 +6,7 @@ const app = express();
 //Database
 //___________________
 // How to connect to the database either via heroku or locally
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/DB_dogphotos'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/dogtoysdb'
 
 
 //Port
@@ -43,7 +43,6 @@ app.use('/toys', toysController)
 app.get('/', (req, res) => {
     res.send('app is running!')
 })
-
 
 //Listener
 //___________________
