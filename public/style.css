@@ -2,6 +2,14 @@
     color: green;
 } */
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 img {
     width: 200px;
     margin: auto;
@@ -24,6 +32,27 @@ img {
     text-align: center;
     margin: 0 auto;
 }
+
+.buttons {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 33.1%;
+}
+
+form {
+    margin: 10px 0 0 30px;
+}
+
+/* 
+.btn-floating btn waves-effect waves-light red {
+    padding: 20px;
+}
+
+.material-icons {
+    padding: 50px;
+} */
 
 /* body {
     background-color: blue;
