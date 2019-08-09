@@ -38,4 +38,8 @@ Materialize was utilized to align content as well as to style edit and delete bu
 * Had a general idea of how I wanted the user-flow to feel, and as I build each route, that flow became more clear.
 * I got the site to work pretty well over all and I would have liked to add more styling as well as more seed data. In the mean time I added extra data manually through the site. I am happy with my result!
 
-[Imgur](https://i.imgur.com/6g9bIMW.png)
+[Pet Toy Swap Index Page](https://i.imgur.com/6g9bIMW.png)
+[Pet Toy Swap Show Page](https://i.imgur.com/KiXy5Ei.png)
+[Pet Toy Swap Edit Page](https://i.imgur.com/RhC5gEY.png)
+[Pet Toy Swap New Page](https://i.imgur.com/dKLWZ6n.png)
+
