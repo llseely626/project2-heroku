@@ -37,3 +37,5 @@ Materialize was utilized to align content as well as to style edit and delete bu
 * Started with wireframing- initially wanted to include separate pages for dog and cat toys but decided to simplify and keep all-inclusive pet toys on one page instead. 
 * Had a general idea of how I wanted the user-flow to feel, and as I build each route, that flow became more clear.
 * I got the site to work pretty well over all and I would have liked to add more styling as well as more seed data. In the mean time I added extra data manually through the site. I am happy with my result!
+
+[Imgur](https://i.imgur.com/6g9bIMW.png)
